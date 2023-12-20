@@ -125,7 +125,7 @@
                                     <div class="uk-navbar-item">
                                         <ul class="uk-subnav uk-subnav-small uk-visible@m">
                                             <li>
-                                                <a href="https://twitter.com/thebrcstarter"><img src="./twitter (2).png" width="45" height="45"></a>
+                                                <a href="https://twitter.com/thebrcstarter"><img src="./Twitter X Icon.png" width="45" height="45"></a>
                                             </li>
                                             
                                         </ul>
@@ -172,7 +172,7 @@
                                         <img class="uk-position-top-left" width="44" src="../assets/images/objects/bitcoin-01.png" alt="object" style="top: -20%; left: 50%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
                                         <img class="uk-position-left" width="32" src="../assets/images/objects/bitcoin-01.png" alt="object" style="top: 16%; left: -16%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;">
                                         <img class="uk-position-bottom-left" width="58" src="../assets/images/objects/bitcoin-01.png" alt="object" style="bottom: -16%; left: 16%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;">
-                                        <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m">Decentralized BRC20 tokens IDO Launchpad</h2>
+                                        <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m" style="color: #715104;">Decentralized BRC20 tokens IDO Launchpad</h2>
                                         <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Let’s accelerate BRC20 tokens the adoption in the crypto industry</p>
                                         <!-- <a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
                                             <span>Buy Now</span>
@@ -367,10 +367,19 @@
             <!-- about end -->
 
             <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="../assets/images/divider-01.svg" alt="Divider" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
-
+            <!-- <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                <div class="uk-panel uk-text-center">
+                    <h2 class="uk-h3 uk-h1@m">Tokenomics</h2>
+                </div>
+            </header> -->
             <!-- tokenomics start -->
             <div id="uni_tokenomics" class="uni-tokenomics uk-section uk-section-xlarge@m uk-panel">
-                <div class="uk-container">
+                 <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
+                <div class="uk-panel uk-text-center">
+                    <h2 class="uk-h3 uk-h1@m">Tokenomics</h2>
+                </div>
+            </header>
+                <!-- <div class="uk-container">
                     <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                         <div class="uk-panel uk-text-center">
                             <h2 class="uk-h3 uk-h1@m">Tokenomics</h2>
@@ -486,7 +495,29 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                                 <div class="uk-container">
+
+                                    <style>
+                                        #chartdiv {
+                                          width: 100%;
+                                          height: 30rem; /* Default height for desktop */
+                                        }
+                                      
+                                        @media (max-width: 768px) {
+                                          /* Adjust the max-width value based on your design needs */
+                                          #chartdiv {
+                                            height: 30rem; /* Height for screens with a width of 768 pixels or less (typical for mobile) */
+                                          }
+                                        }
+                                      </style>
+                            
+                            
+                            
+                             <div id="chartdiv" ></div>
+                                 </div>
+
+
                 </div>
             </div>
             
@@ -934,6 +965,69 @@
         <script defer src="../assets/js/swiper-helper.js"></script>
         <script defer src="../assets/js/typed-helper.js"></script>
         <script defer src="../assets/js/anime-helper.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+        
+        <!-- Chart code -->
+        <script>
+            am4core.ready(function() {
+          
+              // Themes begin
+              am4core.useTheme(am4themes_animated);
+              // Themes end
+          
+              var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+              chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+          
+              chart.legend = new am4charts.Legend();
+          
+              chart.data = [
+                {
+                  country: "Private Sale",
+                  litres: 250,
+                  color: am4core.color("#D5AE4B") // Set the color for this part
+                },
+                {
+                  country: "Marketing & Partneship",
+                  litres: 180,
+                  color: am4core.color("#FCAC0C") // Set the color for this part
+                },
+                {
+                  country: "Team",
+                  litres: 120,
+                  color: am4core.color("#FFD810") // Set the color for this part
+                },
+                {
+                  country: "Lp Staking",
+                  litres: 150,
+                  color: am4core.color("#FFFD12") // Set the color for this part
+                },
+                {
+                  country: "Liquidity & CEX",
+                  litres: 100,
+                  color: am4core.color("#FFFFAA") // Set the color for this part
+                },
+                {
+                  country: "Advisors & Legal",
+                  litres: 50,
+                  color: am4core.color("#ECC25F") // Set the color for this part
+                },
+                {
+                  country: "Development",
+                  litres: 50,
+                  color: am4core.color("#C08D17") // Set the color for this part
+                }
+              ];
+          
+              var series = chart.series.push(new am4charts.PieSeries3D());
+              series.dataFields.value = "litres";
+              series.dataFields.category = "country";
+              series.slices.template.propertyFields.fill = "color"; // Set the custom color for each slice
+          
+            }); // end am4core.ready()
+          </script>
+          
 
         <!-- <script defer src="../assets/js/anime-helper-defined-timelines.js"></script> -->
         <script>
