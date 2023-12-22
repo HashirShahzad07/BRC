@@ -34,6 +34,100 @@
         <!-- <link rel="preload" href="../assets/js/anime-helper-defined-timelines.js" as="script"> -->
 
         <!-- include styles -->
+        <style>
+            @font-face {
+                font-family: pop;
+                src: url(./Poppins-Light.ttf);
+            }
+            body{
+                font-family: 'pop';
+            }
+            /* Reset some default styles */
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the footer */
+.footer-custom {
+    padding: 50px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.footer-custom .content-wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-custom .column {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-custom h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-custom ul {
+    list-style: none;
+}
+
+.footer-custom ul li {
+    margin-bottom: 8px;
+}
+
+/* Styling for the social icons */
+.wrapper-social-fooer-custom img {
+    width: 32px;
+    height: auto;
+}
+
+/* Styling for the logo and copyright section */
+.footer-custom .column:last-child {
+    text-align: center;
+}
+
+.footer-custom .column:last-child img {
+    width: 240px;
+}
+
+/* Styling for the copyright section */
+.copyright {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.copyright span {
+    font-size: 12px;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .footer-custom {
+        padding: 30px 0;
+    }
+
+    
+
+    .copyright span {
+        text-align: center;
+    }
+}
+
+ 
+
+            
+
+
+        </style>
         <script src="../assets/js/app-head.js"></script>
         <link rel="stylesheet" href="../assets/css/theme/main.min.css">
 
@@ -172,8 +266,8 @@
                                         <img class="uk-position-top-left" width="44" src="../assets/images/objects/bitcoin-01.png" alt="object" style="top: -20%; left: 50%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;">
                                         <img class="uk-position-left" width="32" src="../assets/images/objects/bitcoin-01.png" alt="object" style="top: 16%; left: -16%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;">
                                         <img class="uk-position-bottom-left" width="58" src="../assets/images/objects/bitcoin-01.png" alt="object" style="bottom: -16%; left: 16%" data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;">
-                                        <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m" style="color: #c18700;">Decentralized BRC20 tokens IDO Launchpad</h2>
-                                        <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted">Let’s accelerate BRC20 tokens adoption in the crypto industry</p>
+                                        <h2 class="uk-h2 uk-heading-d3@m uk-margin-small uk-margin@m" style="color: #c18700; font-family: 'pop';">Decentralized BRC20 tokens IDO Launchpad</h2>
+                                        <p class="uk-text-xlarge uk-width-xlarge@m uk-text-muted" style="font-family: 'pop'; color: #ffffff;">Let’s accelerate BRC20 tokens adoption in the crypto industry</p>
                                         <!-- <a href="#" class="uk-button uk-button-medium@m uk-button-gradient uk-margin-small-top">
                                             <span>Buy Now</span>
                                             <i class="uk-text-bold"></i>
@@ -277,8 +371,8 @@
                                         <div>
                                             <div class="uk-panel" data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;">
                                                 <!-- <span class="uk-text-overline uk-text-gradient">Our mission</span> -->
-                                                <h3 class="uk-h3 uk-h1@m">Abstract </h3>
-                                                <p class="uk-text-large@m">Bitcoin, being the trailblazer in blockchain and cryptocurrency, paved the way for subsequent advancements like NFTs, smart contracts, and tokenization. While its rarely-altered protocol brings stability, Bitcoin has been criticized for appearing somewhat stagnant. However, the introduction of Ordinals has breathed new life into Bitcoin's ecosystem, driving swift progress in 2023. Ordinals, a protocol layered onto the Bitcoin blockchain, facilitates the creation of NFTs and BRC-20 tokens without tweaking Bitcoin's code. Similar to Ethereum's ERC-20, the BRC-20 standard supports various token projects, enhancing Bitcoin's appeal for both entertainment and education. BRC-20 tokens are creating a promising landscape for future developments and opportunities, echoing Ethereum's growth in 2017.
+                                                <h3 class="uk-h3 uk-h1@m" style="font-family: 'pop';">Abstract </h3>
+                                                <p class="uk-text-large@m" style="font-family: 'pop';" >Bitcoin, being the trailblazer in blockchain and cryptocurrency, paved the way for subsequent advancements like NFTs, smart contracts, and tokenization. While its rarely-altered protocol brings stability, Bitcoin has been criticized for appearing somewhat stagnant. However, the introduction of Ordinals has breathed new life into Bitcoin's ecosystem, driving swift progress in 2023. Ordinals, a protocol layered onto the Bitcoin blockchain, facilitates the creation of NFTs and BRC-20 tokens without tweaking Bitcoin's code. Similar to Ethereum's ERC-20, the BRC-20 standard supports various token projects, enhancing Bitcoin's appeal for both entertainment and education. BRC-20 tokens are creating a promising landscape for future developments and opportunities, echoing Ethereum's growth in 2017.
                                                     <br><br>BRCStarter aims to do its part on paving the future path of BRC-20 tokens by providing an app allowing the projects to have the ecosystem for their activities
                                                     </p>
                                                 
@@ -297,25 +391,25 @@
                                         </div>
                                         <div class="uk-flex-first@m uk-first-column">
                                             <div class="uk-panel" data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 400;" style="opacity: 0; transform: translateX(-24px);">
-                                                <span class="uk-text-overline " style="color: rgb(255, 255, 255);">$BRCST token will be launched on Binance Smart Chain at start and  will become soon after crosschain  (BSC & BRC20).</span>
-                                                <h3 class="uk-h3 uk-h1@m">About $BRCST tokens</h3>
-                                                <p class="uk-text-large@m">BRC-20 protocol has currently limitation regarding liquidity and smart contract development. BSC network offers today sufficient liquidity for $BRCST and will allow BRCStarter to offer farming additionally to staking for App access.</p>
-                                                <span class="uk-text-overline " style="color: #ff9500;">UTILITIES</span>
+                                                <span class="uk-text-overline " style="color: rgb(255, 255, 255);font-family: 'pop';">$BRCST token will be launched on Binance Smart Chain at start and  will become soon after crosschain  (BSC & BRC20).</span>
+                                                <h3 class="uk-h3 uk-h1@m" style="font-family: 'pop';">About $BRCST tokens</h3>
+                                                <p class="uk-text-large@m" style="font-family: 'pop';">BRC-20 protocol has currently limitation regarding liquidity and smart contract development. BSC network offers today sufficient liquidity for $BRCST and will allow BRCStarter to offer farming additionally to staking for App access.</p>
+                                                <span class="uk-text-overline " style="color: #ff9500;" style="font-family: 'pop';">UTILITIES</span>
                                                     
                                                 <div style="display: flex; justify-content: center; margin-top: 10%;">
                                                     <div class="icon-container" style="margin-right: 20%;">
                                                         <img src="./sido.png" width="45" height="45" style="width: 60px; height: 60px;">
-                                                        <span style="margin-top: 10px;">Earn Allocation<br>For IDO</span>
+                                                        <span style="margin-top: 10px;" style="font-family: 'pop';">Earn Allocation<br>For IDO</span>
                                                     </div>
                                                 
                                                     <div class="icon-container" style="margin-right: 20%;">
                                                         <img src="./farming.jpg" width="45" height="45" style="width: 60px; height: 60px;">
-                                                        <span style="margin-top: 10px;">Yield Farming</span>
+                                                        <span style="margin-top: 10px;" style="font-family: 'pop';">Yield Farming</span>
                                                     </div>
                                                 
                                                     <div class="icon-container">
                                                         <img src="./governance.png" width="45" height="45" style="width: 60px; height: 60px;">
-                                                        <span style="margin-top: 10px;">Governance</span>
+                                                        <span style="margin-top: 10px;" style="font-family: 'pop';">Governance</span>
                                                     </div>
                                                 </div>
                                                 
@@ -344,7 +438,7 @@
             <div id="uni_tokenomics" class="uni-tokenomics uk-section uk-section-xlarge@m uk-panel">
                  <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
                 <div class="uk-panel uk-text-center">
-                    <h2 class="uk-h3 uk-h1@m">Roadmap</h2>
+                    <h2 class="uk-h3 uk-h1@m" style="font-family: 'pop';">Roadmap</h2>
                 </div>
             </header>
                 <!-- <div class="uk-container">
@@ -766,69 +860,7 @@
             <!-- how to buy start -->
             <div id="uni_buy" class="uni-buy uk-section uk-section-xlarge@m uk-panel">
                 <div class="uk-container uk-container-small">
-                    <!-- <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;">
-                        <div class="uk-panel uk-text-center">
-                            <h2 class="uk-h3 uk-h1@m">Ape BRC20 tokens on a reliable launchpad from crypto expert</h2>
-							
-                            <a href="https://bscscan.com/token/ " class="uk-button uk-button-small uk-button-large@m uk-button-gradient uk-margin-small-top uk-margin-large-top@m">Telegram </a>
-                        </div>
-                    </header> -->
-                    <!-- <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m" data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;"> -->
-                        
-                        <!-- <img class="uk-position-top-left uk-text-secondary" width="16" src="./circle2.png" alt="Object" style="top: -16%; left: 8%">
-                        <img class="uk-position-bottom-right uk-text-primary" width="24" src="./circle1.png" alt="Object" style="bottom: 16%; right: -8%">
-                        <img class="uk-position-bottom-left uk-text-muted" width="28" src="./circle2.png" alt="Object" style="bottom: 16%; left: -8%"> -->
-                        <!-- <div class="uk-grid uk-grid-match" data-uk-grid="" data-anime="targets: > *; opacity:[0, 1]; translateY:[24, 0]; onview: -250; delay: anime.stagger(100);">
-                            <div class="uk-width-1-3">
-                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
-                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
-                                        <div class="uk-width-1-4@m">
-                                            <img src="../assets/images/icon-01.png" alt="Icon">
-                                        </div>
-                                        <div class="uk-panel uk-width-expand">
-                                            <h3 class="uk-h5 uk-h4@m">BRC20 adoption</h3>
-                                            <p>There are very limited launchpads supporting BRC-20 tokens limiting the protocol development. 
-                                                BRCStarter will provide projects with easy-to-use app to support their launch through its own community including by fact a marketing support
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
-                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
-                                        <div class="uk-width-1-4@m">
-                                            <img src="../assets/images/icon-02.png" alt="Icon">
-                                            <div hidden class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center uk-margin-medium-bottom@m">
-                                                <i class="uk-icon-medium uk-icon-medium@m unicon-select-window"></i>
-                                            </div>
-                                        </div>
-                                        <div class="uk-panel uk-width-expand">
-                                            <h3 class="uk-h5 uk-h4@m">Legit and quality projects </h3>
-                                            <p>As a global issue, but now especially for a protocol with important hype, it is a challenge to make the appropriate assessment to identify legitimate projects and avoid shady ones.
-                                                With an experienced team and strong backers who are advising us, BRCStarter will conduct due diligence, filtering projects and have an extended selection process
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-width-1-3">
-                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
-                                    <div class="uk-grid uk-grid-medium@m" data-uk-grid="">
-                                        <div class="uk-width-1-4@m">
-                                            <img src="../assets/images/icon-03.png" alt="Icon">
-                                            <div hidden class="uk-card uk-card-xsmall uk-radius-medium uk-background-gradient uk-flex-middle uk-flex-center uk-margin-medium-bottom@m">
-                                                <i class="uk-icon-medium uk-icon-medium@m unicon-select-window"></i>
-                                            </div>
-                                        </div>
-                                        <div class="uk-panel uk-width-expand">
-                                            <h3 class="uk-h5 uk-h4@m">Network</h3>
-                                            <p>Projects launching may not have the necessary network to ensure an optimized market launch. We have all the necessary network in any fields in the crypto industry to guarantee a safe and sustainable launch (Kols, audit, CEX,etc…)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+               
 <style>
     /* Add your styles here */
 .css-vxgrp0 {
@@ -924,15 +956,15 @@
 
 <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;">
     <div class="uk-panel uk-text-center">
-        <h2 class="uk-h3 uk-h1@m">Ape BRC20 tokens on a reliable launchpad from crypto expert</h2>
+        <h2 class="uk-h3 uk-h1@m" style="font-family: 'pop';">Ape BRC20 tokens on a reliable launchpad from crypto expert</h2>
     </div>
 </header>
 
                         <div class="css-vxgrp0" style="margin-top: 10%;">
                             <div class="css-fa113w">
                                 <img src="./icon-01.png" width="45" height="45">
-                                <h3 class="chakra-text css-6jrqk4">BRC20 Adoption </h3>
-                                <p class="chakra-text css-2873ce">There are very limited launchpads supporting BRC-20 tokens limiting the protocol development. BRCStarter will provide projects with easy-t—use app to support their launch through its own community including by fact a marketing support</p>
+                                <h3 class="chakra-text css-6jrqk4" style="font-family: 'pop';">BRC20 Adoption </h3>
+                                <p class="chakra-text css-2873ce" style="font-family: 'pop';">There are very limited launchpads supporting BRC-20 tokens limiting the protocol development. BRCStarter will provide projects with easy-t—use app to support their launch through its own community including by fact a marketing support</p>
                            
                             </div>
                             <!-- Add similar divs for other sections -->
@@ -940,15 +972,15 @@
                             <div class="css-fa113w">
                                 <img src="./icon-02.png" width="85" height="85">
 
-                                <h3 class="chakra-text css-6jrqk4">Legit and quality projects </h3>
-                                <p class="chakra-text css-2873ce">As a global issue, but now especially for a protocol with important hype, it is a challenge to make the appropriate assessment to identify legitimate projects and avoid shady ones. With an experienced team and strong backers who are advising us, BRCStarter will conduct due diligence, filtering projects and have an extended selection process</p>
+                                <h3 class="chakra-text css-6jrqk4" style="font-family: 'pop';">Legit and quality projects </h3>
+                                <p class="chakra-text css-2873ce" style="font-family: 'pop';"> As a global issue, but now especially for a protocol with important hype, it is a challenge to make the appropriate assessment to identify legitimate projects and avoid shady ones. With an experienced team and strong backers who are advising us, BRCStarter will conduct due diligence, filtering projects and have an extended selection process</p>
                                
                             </div>
                             <div class="css-fa113w">
                                 <img src="./icon-03.png" width="85" height="85">
 
-                                <h3 class="chakra-text css-6jrqk4">Network</h3>
-                                <p class="chakra-text css-2873ce">Projects launching may not have the necessary network to ensure an optimized market launch. We have all the necessary network in any fields in the crypto industry to guarantee a safe and sustainable launch (Kols, audit, CEX,etc…)</p>
+                                <h3 class="chakra-text css-6jrqk4" style="font-family: 'pop';">Network</h3>
+                                <p class="chakra-text css-2873ce" style="font-family: 'pop';">Projects launching may not have the necessary network to ensure an optimized market launch. We have all the necessary network in any fields in the crypto industry to guarantee a safe and sustainable launch (Kols, audit, CEX,etc…)</p>
                             
                             </div>                  
                         
@@ -971,7 +1003,7 @@
                             <img class="uk-position-bottom-right" width="24" src="./circle2.png" alt="Object" style="bottom: 16%; right: -8%">
                             <img class="uk-position-top-right" width="40" src="./teraBTc.png" alt="Object" style="top: 0%; right: -16%">
                             <img class="uk-position-bottom-left" width="48" src="../assets/images/objects/bitcoin-01.png" alt="Object" style="bottom: 16%; left: -8%">
-                            <a href="hello@brcstarter.io"><h2 class="uk-h3 uk-heading-d1@m">Send us your pitch deck here! </h2></a> 
+                            <a href="hello@brcstarter.io"><h2 class="uk-h3 uk-heading-d1@m" style="font-family: 'pop';">Send us your pitch deck here! </h2></a> 
                             <!-- <a href="hello@brcstarter.io" class="uk-button uk-button-small uk-button-large@m uk-button-gradient uk-margin-small-top uk-margin-large-top@m">Mail Us</a> -->
                         </div>
                     </div>
@@ -982,33 +1014,66 @@
 
 
         <!-- Footer start -->
-        <footer class="uni-footer uk-section uk-section-xlarge@m">
-            <div class="uk-container">
-                <div class="uk-panel">
-                    <div class="uk-panel uk-text-small">
-                        <div class="uk-grid uk-child-width-auto@m uk-flex-center uk-flex-between@m uk-text-center uk-text-left@m" data-uk-grid>
-                            <div>
-                                <ul class="uk-subnav uk-subnav-small uk-text-muted uk-flex-center">
-                                    <li>
-                                        <a href="https://twitter.com/thebrcstarter" target="_blank">
-                                            <img src="./Twitter X Icon.png" width="45" height="45" alt="Twitter">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://t.me/brcstarter" target="_blank">
-                                            <img src="./telgrrgrgrgr.png" width="40" height="40" alt="Telegram">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="uk-flex-first@m uk-flex-center">
-                                <p class="uk-text-muted">&copy; 2023 BRCStarter. All rights reserved.</p>
-                            </div>
-                        </div>
+        <footer class="footer-custom has-bg-img" style="background-image: url(wp-content/uploads/2023/08/footer-bg.png);">
+            <div class="container-wrapper">
+              <div class="content-wrapper-footer">
+                            <div class="column">
+                                <ul>
+                                    <!-- <li>
+                                      <h5 class="white">SOCIAL</h5>
+                                    </li> -->
+                                                                     
+        
+                                    <ul>
+                                        <li>
+                                            <h5 class="white">SOCIAL</h5>
+                                          </li>
+                                        <li><a target="" href="https://medium.com/@brcstarter"><img src="./medium.png" width="15" height="15"> Medium</a></li>
+                                        <li><a target="" href="https://t.me/brcstartercommunity"><i class="fab fa-telegram"></i> Telegram - Chat</a></li>
+                                        <li><a target="" href="https://t.me/brcstarternews"><i class="fab fa-telegram"></i> Telegram - Announcement</a></li>
+                                        <li><a target="" href="https://twitter.com/thebrcstarter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                    </ul>
+                                    
+                                                                </ul>
                     </div>
-                </div>
+              
+                
+                   
+                
+        
+                    <div class="column">
+                        <ul>
+                            <!-- <li>
+                              <h5 class="white">HELP</h5>
+                            </li> -->
+                                                             
+
+                            <ul>
+                                <li>
+                                    <h5 class="white">HELP</h5>
+                                  </li>
+                                <li><a target="" href="#"> Apply For IDO</a></li>
+                                <li><a target="" href="#"> Contact</a></li>
+                                <li><a target="" href="#"> Terms Of Use</a></li>
+                                <li><a target="" href="#"> Token Terms</a></li>
+                            </ul>
+                            
+                                                        </ul>
             </div>
-        </footer>
+                
+                          <div class="column">
+                    <img src="./assets/images/logo_new.png" alt="" width="240px">
+                                  <p class="small text-white">© 2023 Copyright - Brcstarter
+
+                                  </p>
+                              </div>
+                      </div>
+        
+        
+            </div>
+        
+        
+            </footer>
         
 
         <!-- Footer end -->
